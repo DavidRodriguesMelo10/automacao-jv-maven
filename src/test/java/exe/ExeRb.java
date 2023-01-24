@@ -7,6 +7,7 @@ public class ExeRb {
     public static void main(String[] args){
         Robodesc robodesc = new Robodesc ();
         robodesc.abrirChrome();
+        robodesc.openSite();
 
 
 

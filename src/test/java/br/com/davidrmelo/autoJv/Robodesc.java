@@ -5,9 +5,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Robodesc {
 
+    public ChromeDriver openChrome;
+
     public void abrirChrome(){
         WebDriverManager.chromedriver().setup();
-        ChromeDriver openChrome = new ChromeDriver();
+        openChrome = new ChromeDriver();
+    }
+
+    public void openSite(){
         openChrome.get("https://ge.globo.com/?utm_source=barraGCOM");
     }
 
