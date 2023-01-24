@@ -1,16 +1,13 @@
 package exe;
 
-import br.com.davidrmelo.autoJv.Robodesc;
+import br.com.davidrmelo.autoJv.RoboDesc;
 
 public class ExeRb {
 
     public static void main(String[] args){
-        Robodesc robodesc = new Robodesc ();
-        robodesc.abrirChrome();
-        robodesc.openSite();
-
-
-
+        RoboDesc robodesc = new RoboDesc();
+        robodesc.openSite("https://globoplay.globo.com/");
+        robodesc.doLogin("david.13rodrigues@hotmail.com","D+t=b@21");
 
     }
 
